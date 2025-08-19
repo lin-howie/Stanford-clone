@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #b1040e;
+  color: white;
+
+  padding-left: 20px;
+}
+
+.search,
+.stanford-university,
+.menu {
+  height: 48px;
+  align-content: center;
+  align-content: center;
+}
+
+.stanford-university {
+  flex: 1;
+}
+
+.search,
+.menu {
+  width: 100px;
+  background-color:  lightblue;
+}
+
+
+

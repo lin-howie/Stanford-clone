@@ -1,0 +1,12 @@
+/* make hero image shink correct*/
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+}
+
+.hero-image {
+  width: 100vw;
+  height: 100%;
+}
