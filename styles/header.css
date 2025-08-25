@@ -5,25 +5,34 @@ header {
   background-color: #b1040e;
   color: white;
 
-  padding-left: 20px;
-}
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 
-.search,
-.stanford-university,
-.menu {
-  height: 48px;
-  align-content: center;
-  align-content: center;
+  padding-left: 20px;
+
+  position: fixed;
+  left:0;
+  right: 0;
+
+  z-index: 2;
 }
 
 .stanford-university {
   flex: 1;
+  align-content: center;
 }
 
 .search,
 .menu {
+  display: flex;
   width: 100px;
-  background-color:  lightblue;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search:hover,
+.menu:hover {
+  background-color: darkred;
 }
 
 

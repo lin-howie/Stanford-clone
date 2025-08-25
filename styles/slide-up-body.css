@@ -1,0 +1,16 @@
+.slide-up-body > h1 {
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  flex: 1;
+  height: 600px;
+  margin: 0;
+
+  position: sticky;
+  bottom: -100;
+
+  z-index: 1;
+}

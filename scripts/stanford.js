@@ -1,13 +1,23 @@
 // Screen length watchers
 function updateHeaderText() {
-  const stanfordText = document.querySelector('.stanford-university-text');
+  const stanfordHeaderText = document.querySelector('.stanford-university-text');
+  const stanfordHeroText = document.querySelector('.stanford-hero-text');
+  let windowWidth = window.innerWidth;
 
-  if(window.innerWidth <= 570) {
-    stanfordText.innerText = 'Stanford'
+  console.log(windowWidth);
+  if(windowWidth <= 570) {
+    stanfordHeaderText.innerText = 'Stanford'
+  } else if (windowWidth >= 570 && windowWidth <= 620) {
+    stanfordHeaderText.innerText = 'Stanford University'
   } else {
-    stanfordText.innerText = 'Stanford University'
+    stanfordHeaderText.innerText = 'Stanford University Clone'
   }
-  console.log('function ran');
+
+  if(windowWidth < 690) {
+    stanfordHeroText.innerText = "Stanford"
+  } else {
+    stanfordHeroText.innerText = "Stanford Clone"
+  }
 }
 
 // run on load
