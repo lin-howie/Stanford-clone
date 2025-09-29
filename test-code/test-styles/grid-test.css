@@ -1,0 +1,18 @@
+.grid {
+  display: grid;  
+  grid-template-rows: auto;
+}
+
+.grid1 {
+  background-color: lightblue;
+
+  grid-template-columns: auto;
+}
+
+.grid2 {
+  background-color: lightpink;
+}
+
+.grid3 {
+  background-color: lightgreen;
+}

@@ -1,4 +1,27 @@
-.slide-up-body > h1 {
+.slide-up-body {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.slide-up-body > div > button {
+  background-color: #b1040e;
+  color: white;
+  border: 0;
+  font-size: 18px;
+  padding: 18px 160px;
+}
+
+.slide-up-body > div > button:hover {
+  background-color: darkred;
+}
+
+.slide-up-body > div > h3 {
+  text-align: center;
+  line-height: 36px;
+  padding: 15px;
+}
+
+.slide-up-body > div { /*might be an issue in the future*/
   background-color: white;
 
   display: flex;
@@ -13,4 +36,38 @@
   bottom: -100;
 
   z-index: 1;
+}
+
+.big-image{
+  height: 60vw;
+}
+
+.small-image {
+  height: 30vw;
+}
+
+.photo-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.row1 {
+  margin: auto;
+}
+
+.small-image-grid {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+}
+
+.row2, .row3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.image_selection {
+  margin-left: 100px;
 }
